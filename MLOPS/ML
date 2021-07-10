@@ -1,7 +1,7 @@
 FROM centos
 RUN yum install python36 -y
 RUN pip3 install joblib
-RUN pip3 install scikit-learn
+RUN pip3 install 'scikit-learn==0.24.1'
 RUN mkdir /MLOPS
 COPY marks.pk1 /MLOPS/
 COPY marks.py /MLOPS/
